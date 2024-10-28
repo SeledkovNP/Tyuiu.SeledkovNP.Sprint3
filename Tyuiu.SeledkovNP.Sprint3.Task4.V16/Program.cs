@@ -28,19 +28,19 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task4.V16
             //  y=((cos(x)+x)/x)+0.25 
             //  х = 0 пропустить
             //  Полученные значения перемножать  
+            //  6.719
 
-            int startValue = -5;
-            Console.WriteLine("Начало" + startValue);
-            int stopValue = 5;
-            Console.WriteLine("Конец" + stopValue);
-            double res = ds.Calculate(startValue, stopValue);
+            int startValue = Convert.ToInt32(Console.ReadLine());
+            int stopValue = Convert.ToInt32(Console.ReadLine());
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(" Полученное значение = " + res);
+
+            Console.WriteLine($"Произведение значений функции на отрезке от -5 до 5 (с пропуском x=0): "  + ds.Calculate(startValue, stopValue));              // 6.719
+               
 
             Console.ReadKey();
 

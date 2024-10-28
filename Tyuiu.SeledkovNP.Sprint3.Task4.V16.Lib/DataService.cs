@@ -6,20 +6,22 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task4.V16.Lib
         public double Calculate(int startValue, int stopValue)
         {
 
-            int x;
-            double sp = 0;
-            for (x = startValue; x <= stopValue; x++)   // Значения X от -5 до 5
+            double product = 1;              // Инициализация произведения
+            bool hasValues = false;         // Проверка на наличие значений
+
+            for (int x = startValue; x <= stopValue; x++)
             {
-                if (x == 0)        // Если Х = 0, то пропустить
+                if (x == 0)                 // Пропускаем значение при x = 0
                 {
                     continue;
                 }
-                else                // в ином случии пощитат по формуле
-                {
-                    sp = sp + ((Math.Cos(x) + x) / x) + 0.25;
-                }
+
+                double y = (Math.Cos(x) + x) / x + 0.25;      // Вычисление функции
+                product *= y;                                // Умножение на текущее значение y
+                hasValues = true;                           // Обозначаем, что есть значения для произведения
             }
-            return Math.Round(sp, 3);           // значения всех формул
+
+            return Math.Round(product, 3);                      // значения до 3 после запитой
 
         }
     }
