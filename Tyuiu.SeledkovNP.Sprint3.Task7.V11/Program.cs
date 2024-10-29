@@ -45,7 +45,7 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task7.V11
             double[] res = ds.GetMassFunction(startValue, stopValue);
 
             // Вывод таблицы значений
-            Console.WriteLine(" Таблица значений функции F(x) = cos(x) + sin(x) / (2 - 2x) - 4 ");
+            Console.WriteLine(" Таблица значений функции F(x) = cos(x) + sin(x) / (2 - 2x) - 4x ");
             Console.WriteLine(" x   |   F(x) ");
             Console.WriteLine("--------------------");
 

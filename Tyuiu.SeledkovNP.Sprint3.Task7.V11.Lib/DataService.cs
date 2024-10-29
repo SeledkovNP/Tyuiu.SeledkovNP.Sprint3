@@ -29,7 +29,7 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task7.V11.Lib
             {
                 try
                 {
-                    return Math.Cos(x) + Math.Sin(x) / (2 - 2 * x) - 4;
+                    return Math.Cos(x) + Math.Sin(x) / (2 - 2 * x) - 4 * x;
                 }
                 catch (DivideByZeroException)
                 {
