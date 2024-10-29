@@ -27,16 +27,27 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task7.V11.Lib
 
         static double CalculateFunction(double x)
             {
-                try
+
+            try
+            {
+                // Проверяем деление на ноль перед выполнением операции
+                if (2 - 2 * x == 0)
                 {
-                    return Math.Cos(x) + Math.Sin(x) / (2 - 2 * x) - 4 * x;
+                    return 0.0; // Возвращаем 0.0 при делении на ноль
                 }
-                catch (DivideByZeroException)
-                {
-                    return 0; // Возвращаем 0 при делении на ноль
-                }
+
+                double result = Math.Cos(x) + Math.Sin(x) / (2 - 2 * x) - 4 * x;
+
+                // Округляем результат до 2 знаков после запятой
+                return Math.Round(result, 2);
+            }
+            catch (Exception)
+            {
+                return 0.0; // Возвращаем 0.0 для любых других исключений
             }
 
+
+        }
         
     }
 }
