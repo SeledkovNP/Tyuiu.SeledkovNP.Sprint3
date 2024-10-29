@@ -30,8 +30,8 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task4.V16
             //  Полученные значения перемножать  
             //  6.719
 
-            int startValue = Convert.ToInt32(Console.ReadLine());
-            int stopValue = Convert.ToInt32(Console.ReadLine());
+            int startValue = Convert.ToInt32(Console.ReadLine());    // Запрашиваю первое значение
+            int stopValue = Convert.ToInt32(Console.ReadLine());    //  Запрашиваю второе значения
 
 
             Console.WriteLine("***************************************************************************");
@@ -39,7 +39,7 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task4.V16
             Console.WriteLine("***************************************************************************");
 
 
-            Console.WriteLine($"Произведение значений функции на отрезке от -5 до 5 (с пропуском x=0): "  + ds.Calculate(startValue, stopValue));              // 6.719
+            Console.WriteLine($"Произведение значений функции на отрезке от {startValue} до {stopValue} (с пропуском x=0): "  + ds.Calculate(startValue, stopValue));          //  Ответ = 6.719
                
 
             Console.ReadKey();

@@ -9,7 +9,7 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task4.V16.Lib
             double product = 1;              // Инициализация произведения
             bool hasValues = false;         // Проверка на наличие значений
 
-            for (int x = startValue; x <= stopValue; x++)
+            for (int x = startValue; x <= stopValue; x++)      // Пока 1 значение менше второго происходить процес
             {
                 if (x == 0)                 // Пропускаем значение при x = 0
                 {
