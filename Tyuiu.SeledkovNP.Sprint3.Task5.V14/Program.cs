@@ -6,7 +6,7 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task5.V14
         static void Main(string[] args)
         {
 
-
+            
             DataService ds = new DataService();
             Console.WriteLine("Спринт #3 | Выполнила: Селедков Н. П. | Смартю-24-1");
             Console.WriteLine("***************************************************************************");
@@ -43,11 +43,11 @@ namespace Tyuiu.SeledkovNP.Sprint3.Task5.V14
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write($"Результат = {ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2)}");         // резултат
+            Console.Write($"Результат = {ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2)}");         // резултат -31.275
 
 
             Console.ReadKey();
-
+            
         }
     }
 }
